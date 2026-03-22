@@ -1,0 +1,110 @@
+/* --- Global Styles --- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- Brand & Heading Font (Orbitron) --- */
+h1, h2, h3, h4, h5, .navbar-brand, .btn-primary, .fw-bold, .nav-link {
+  font-family: 'Orbitron', sans-serif !important;
+  letter-spacing: 1px;
+}
+
+/* --- Dark Mode Overrides --- */
+body.bg-dark {
+  background-color: #0b0e14 !important; /* Deeper tech black */
+  color: #ffffff !important;
+}
+
+.bg-dark .card {
+  background-color: #161b22 !important;
+  color: #ffffff !important;
+  border: 1px solid #30363d !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Add a subtle glow to cards in dark mode */
+.bg-dark .card:hover {
+  border-color: #0d6efd !important;
+  box-shadow: 0 0 15px rgba(13, 110, 253, 0.2) !important;
+}
+
+.bg-dark .modal-content {
+  background-color: #161b22 !important;
+  color: #ffffff !important;
+  border: 1px solid #444;
+}
+
+.bg-dark .form-control, 
+.bg-dark .form-select {
+  background-color: #0d1117 !important;
+  color: #ffffff !important;
+  border: 1px solid #30363d !important;
+}
+
+.bg-dark .form-control::placeholder {
+  color: #8b949e;
+}
+
+.bg-dark .list-group-item {
+  background-color: #161b22 !important;
+  color: #ffffff !important;
+  border-color: #30363d !important;
+}
+
+/* Hover effect for categories in dark mode */
+.bg-dark .list-group-item-action:hover {
+  background-color: #21262d !important;
+  color: #58a6ff !important;
+}
+
+/* --- Animations & UI Elements --- */
+.product-img {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.product-img-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.product-img-wrapper:hover .product-img {
+  transform: scale(1.1);
+}
+
+.modal.show {
+  display: block;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+}
+
+/* Custom Scrollbar for a Tech Look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.bg-dark ::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0a58ca;
+}
